@@ -6,7 +6,8 @@
     android:background="@drawable/bg_item_place"
     android:layout_width="match_parent"
     android:layout_height="222dp"
-    android:layout_marginBottom="15dp">
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -81,6 +82,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:textColor="@color/white"
                 android:fontFamily="@font/plus_jakarta_sans_medium"
                 android:textSize="18sp"
@@ -109,6 +112,8 @@
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:paddingStart="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:fontFamily="@font/plus_jakarta_sans_regular"
                     tools:text="Grindelwald, Suica" />
             </LinearLayout>
@@ -118,29 +123,24 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-
-                    <RatingBar
-                        android:id="@+id/ratingBar"
-                        style="@style/CustomRatingBar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:isIndicator="true"
-                        android:numStars="5"
-                        android:rating="3.0"
-                        android:stepSize="0.3"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:backgroundTint="#FFEB3B"
+                    android:foregroundTint="#FFEB3B"
+                    android:isIndicator="true"
+                    android:progressBackgroundTint="#000000"
+                    android:progressTint="#FFEC3F"
+                    android:rating="3.7"
+                    android:stepSize="0.1" />
 
                 <TextView
                     android:id="@+id/tv_rating"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/white"
