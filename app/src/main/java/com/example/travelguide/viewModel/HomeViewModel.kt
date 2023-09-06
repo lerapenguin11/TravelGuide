@@ -41,7 +41,11 @@ application: Application) : AndroidViewModel(application) {
         repository.delete(sightseeing)
     }
 
-    fun getAll() = viewModelScope.launch {
+    /*fun getAll() = viewModelScope.launch {
         repository.getAll()
+    }*/
+
+    fun getAll() : LiveData<List<AttractionModel>>{
+        return repository.allSightseeing
     }
 }

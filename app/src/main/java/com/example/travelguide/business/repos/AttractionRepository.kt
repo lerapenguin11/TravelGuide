@@ -12,7 +12,6 @@ class AttractionRepository (private val attractionDao: AttractionDao) {
     //val allSightseeing = LiveData<List<AttractionModel>>()
 
     suspend fun insert(sightseeing: AttractionModel) {
-
         withContext(Dispatchers.IO) {
             attractionDao.insert(sightseeing)
         }

@@ -62,14 +62,14 @@ class HomeFragment : Fragment(), ContinentListener, FavoriteListener {
         continentList.add(
             ContinentModel(0, "Европа", listOf(
                 AttractionModel(0, "Эйфелева башня",
-        "vn", 3f, "Эйфелева башня", false), AttractionModel(1, "Колизей", "",
-                    4f, "Европа", false)
+        "vn", 3f, "Эйфелева башня"), AttractionModel(1, "Колизей", "",
+                    4f, "Европа")
             ))
         )
         continentList.add(
             ContinentModel(1, "Азия", listOf(
                 AttractionModel(2, "Великая Китайская стена",
-                "", 4f, "Европа", false)
+                "", 4f, "Европа")
             )))
 
         continentAdapter.notifyDataSetChanged()
@@ -78,20 +78,20 @@ class HomeFragment : Fragment(), ContinentListener, FavoriteListener {
     override fun continentList(continent: ContinentModel) {
         attractionList.clear()
         attractionList.addAll(continent.attractionModels)
+        //homeViewModel.getAll()
 
         attractionAdapter.notifyDataSetChanged()
     }
 
     override fun favoriteList(attFavoriteList: AttractionModel) {
         homeViewModel.getAll()
-        if (attFavoriteList.isFavorite){
-            attFavoriteList.isFavorite = false
-            homeViewModel.update(attFavoriteList)
-            homeViewModel.delete(attFavoriteList)
-        } else{
-            attFavoriteList.isFavorite = true
-            homeViewModel.insert(attFavoriteList)
-            homeViewModel.update(attFavoriteList)
-        }
+        attFavoriteList.isFavorite = true
+        homeViewModel.update(attFavoriteList)
+        homeViewModel.insert(attFavoriteList)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity).showBottomNavigationView()
     }
 }

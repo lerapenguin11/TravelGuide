@@ -1,5 +1,6 @@
 package com.example.travelguide.presentation
 
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.travelguide.R
 import com.example.travelguide.databinding.ActivityMainBinding
 import com.example.travelguide.utilits.APP_ACTIVITY
+import com.example.travelguide.utilits.REQUEST_READ_EXTERNAL_STORAGE
 import com.example.travelguide.utilits.replaceFragment
 import com.example.travelguide.utilits.setStatusBarGradiant
 import com.example.travelguide.viewModel.RegistrationViewModel
@@ -22,8 +24,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         viewModel = ViewModelProvider(this).get(RegistrationViewModel::class.java)
 
-        if (viewModel.sharedPreferences != null){
-            binding.bottomNavigationView.visibility = View.VISIBLE
+        val code = viewModel.codeSher.getInt("code", 0)
+        if (code == 1){
             replaceFragment(HomeFragment())
             binding.bottomNavigationView.setOnItemSelectedListener {
 
@@ -32,12 +34,23 @@ class MainActivity : AppCompatActivity() {
                     R.id.home -> replaceFragment(HomeFragment())
                     R.id.all -> replaceFragment(FavoriteFragment())
                     R.id.profile -> replaceFragment(ProfileFragment())
+
+                    else -> hideBottomNavigationView()
                 }
                 true
             }
         } else{
             replaceFragment(RegistrationFragment())
-            binding.bottomNavigationView.visibility = View.INVISIBLE
         }
+    }
+
+
+
+    fun hideBottomNavigationView() {
+        binding.bottomNavigationView.visibility = View.GONE
+    }
+
+    fun showBottomNavigationView() {
+        binding.bottomNavigationView.visibility = View.VISIBLE
     }
 }

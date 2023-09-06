@@ -26,17 +26,23 @@ class RegistrationFragment : Fragment() {
 
         viewModel = ViewModelProvider(requireActivity()).get(RegistrationViewModel::class.java)
 
+
         binding.btRegistration.setOnClickListener {
             val name = binding.edInputName.text.toString()
             val surName = binding.edInputSurname.text.toString()
             if (name.isEmpty() && surName.isEmpty()){
                 Toast.makeText(context, getText(R.string.reg_toast), Toast.LENGTH_SHORT).show()
             } else{
-                viewModel.registerUser(name, surName)
+                viewModel.registerUser(name, surName, 1)
                 replaceFragment(HomeFragment())
             }
         }
 
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity).hideBottomNavigationView()
     }
 }

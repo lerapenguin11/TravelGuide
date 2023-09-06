@@ -33,23 +33,25 @@ class AttractionAdapter(private val attractionModelList : List<AttractionModel>,
         holder.ratingBar.rating = attraction.rating
         holder.ratingBar.numStars = 5
 
-        /*if (attraction.isFavorite){
+        if (attraction.isFavorite){
             //listener.favoriteList(attraction)
             holder.ic_fav.setImageResource(R.drawable.ic_fav)
-        } else{
+        } /*else{
             //listener.favoriteList(attraction)
             holder.ic_fav.setImageResource(R.drawable.ic_favorite)
         }*/
         holder.bt_fav.setOnClickListener {
-            //listener.favoriteList(attraction)
+            listener.favoriteList(attraction)
+            holder.ic_fav.setImageResource(R.drawable.ic_fav)
+
             /*if (attraction.isFavorite){
                 listener.favoriteList(attraction)
                 holder.ic_fav.setImageResource(R.drawable.ic_fav)
             } else{
-                listener.favoriteList(attraction)
+                //listener.favoriteList(attraction)
                 holder.ic_fav.setImageResource(R.drawable.ic_favorite)
             }*/
-            listener.favoriteList(attraction)
+            //listener.favoriteList(attraction)
 
         }
     }

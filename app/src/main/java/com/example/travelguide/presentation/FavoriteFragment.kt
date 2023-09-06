@@ -48,6 +48,14 @@ class FavoriteFragment : Fragment(), FavoriteListener {
     }
 
     override fun favoriteList(attFavoriteList: AttractionModel) {
+        if (attFavoriteList.isFavorite){
+            attFavoriteList.isFavorite = false
+            favoriteViewModel.delete(attFavoriteList)
+        }
+    }
 
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity).showBottomNavigationView()
     }
 }
