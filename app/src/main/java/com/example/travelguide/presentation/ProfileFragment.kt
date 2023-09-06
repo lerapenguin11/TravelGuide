@@ -3,21 +3,26 @@ package com.example.travelguide.presentation
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.Activity.RESULT_OK
+import android.content.Context
+import android.content.ContextWrapper
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.test.core.app.ApplicationProvider
 import com.example.travelguide.R
 import com.example.travelguide.databinding.FragmentProfileBinding
 import com.example.travelguide.utilits.PERMISSION_STORAGE
@@ -25,8 +30,8 @@ import com.example.travelguide.utilits.PermissionUtils
 import com.example.travelguide.utilits.REQUEST_READ_EXTERNAL_STORAGE
 import com.example.travelguide.utilits.REQUEST_SELECT_IMAGE
 import com.example.travelguide.viewModel.RegistrationViewModel
-import java.io.File
-import java.io.FileOutputStream
+import com.soundcloud.android.crop.Crop
+import java.io.*
 
 
 class ProfileFragment : Fragment() {
@@ -58,7 +63,6 @@ class ProfileFragment : Fragment() {
             requestGalleryPermission()
         }
 
-
         return binding.root
     }
 
@@ -67,7 +71,7 @@ class ProfileFragment : Fragment() {
         (activity as MainActivity).showBottomNavigationView()
     }
 
-    fun requestGalleryPermission() {
+    private fun requestGalleryPermission() {
         if (ContextCompat.checkSelfPermission(
                 requireContext(),
                 Manifest.permission.READ_EXTERNAL_STORAGE
@@ -83,7 +87,7 @@ class ProfileFragment : Fragment() {
         }
     }
 
-    fun openGallery() {
+    private fun openGallery() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         startActivityForResult(intent, REQUEST_SELECT_IMAGE)
     }
@@ -93,14 +97,21 @@ class ProfileFragment : Fragment() {
 
         if (requestCode == REQUEST_SELECT_IMAGE && resultCode == Activity.RESULT_OK && data != null) {
             val selectedImageUri = data.data
-            selectedImageUri?.let {
-                saveImageLocally(it)
+
+            if (selectedImageUri != null) {
+                Crop.of(selectedImageUri, Uri.fromFile(File(requireContext().cacheDir, "cropped")))
+                    .asSquare()
+                    .start(requireActivity())
+                saveImageLocally(selectedImageUri)
+
                 loadImageFromLocal()
+
             }
         }
     }
 
-    private fun saveImageLocally(imageUri: Uri) {
+
+    private fun saveImageLocally(imageUri: Uri){
         val inputStream = requireContext().contentResolver.openInputStream(imageUri)
         val outputStream = FileOutputStream(getImageFile())
         inputStream?.copyTo(outputStream)
@@ -114,7 +125,7 @@ class ProfileFragment : Fragment() {
             val bitmap = BitmapFactory.decodeFile(imageFile.absolutePath)
             binding.iconProfile.setImageBitmap(bitmap)
         } else{
-            binding.iconProfile.setImageResource(R.drawable.user)
+            binding.iconProfile.setImageResource(com.example.travelguide.R.drawable.user)
         }
     }
 

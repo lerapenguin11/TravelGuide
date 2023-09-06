@@ -8,7 +8,6 @@ import androidx.lifecycle.ViewModel
 
 class RegistrationViewModel(application: Application) : AndroidViewModel(application) {
     val sharedPreferences : SharedPreferences = application.getSharedPreferences("pref_pofile", Context.MODE_PRIVATE)
-    var name1 : String? = null
 
     val codeSher : SharedPreferences = application.getSharedPreferences("pref_pofile", Context.MODE_PRIVATE)
 
@@ -23,6 +22,4 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
             apply()
         }
     }
-
-    //val name = sharedPreferences.getString("name")
 }
