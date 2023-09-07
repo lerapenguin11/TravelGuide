@@ -5,4 +5,6 @@ import com.example.travelguide.business.model.bd.AttractionModel
 interface FavoriteListener {
 
     fun favoriteList(attFavoriteList : AttractionModel)
+
+    fun detailsList(attDetailsList : AttractionModel)
 }

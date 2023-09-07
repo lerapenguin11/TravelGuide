@@ -9,7 +9,7 @@ import kotlinx.coroutines.withContext
 class AttractionRepository (private val attractionDao: AttractionDao) {
 
     val allSightseeing: LiveData<List<AttractionModel>> = attractionDao.getAll()
-    //val allSightseeing = LiveData<List<AttractionModel>>()
+    val favoriteAttractions: LiveData<List<AttractionModel>> = attractionDao.getFavoriteAttractions()
 
     suspend fun insert(sightseeing: AttractionModel) {
         withContext(Dispatchers.IO) {
@@ -26,12 +26,6 @@ class AttractionRepository (private val attractionDao: AttractionDao) {
     suspend fun delete(sightseeing: AttractionModel) {
         withContext(Dispatchers.IO) {
             attractionDao.delete(sightseeing)
-        }
-    }
-
-    suspend fun getAll(): LiveData<List<AttractionModel>>{
-        return withContext(Dispatchers.IO) {
-            attractionDao.getAll()
         }
     }
 }

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">მოგზაურობის სახელმძღვანელო</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">გამარჯობა ცარიელი ფრაგმენტი</string>
+    <string name="welcome">კეთილი იყოს თქვენი მობრძანება!</string>
+    <string name="first_name">Სახელი</string>
+    <string name="last_name">Გვარი</string>
+    <string name="forward">წინ</string>
+    <string name="reg_toast">შეავსეთ ყველა ველი!</string>
+    <string name="home">სახლი</string>
+    <string name="favorite">ფავორიტი</string>
+    <string name="profile">პროფილი</string>
+    <string name="find_your_nfavorite_place">იპოვნეთ თქვენი \ nfavorite ადგილი</string>
+    <string name="faforites">ფაფორიტები</string>
+    <string name="_profile">პროფილი</string>
+    <string name="details">დეტალები</string>
+    <string name="about_trip">მოგზაურობის შესახებ</string>
+    <string name="cont_1">ევრაზია</string>
+    <string name="cont_2">აფრიკა</string>
+    <string name="cont_3">ავსტრალია</string>
+    <string name="cont_4">ანტარქტიდა</string>
+    <string name="cont_5">ჩრდილოეთ ამერიკა</string>
+    <string name="cont_6">სამხრეთ ამერიკა</string>
+    <string name="att_1">ბაიკალის ტბა</string>
+    <string name="att_2">Ჩინეთის დიდი კედელი</string>
+    <string name="att_3">Victoria Falls</string>
+    <string name="att_4">Uluru</string>
+    <string name="att_5">Დიდი ბარიერული რიფი</string>
+    <string name="att_6">ჰურონი</string>
+    <string name="att_7">კლდოვანი მთები</string>
+    <string name="loc_1">რუსეთი</string>
+    <string name="loc_2">ჩინეთი</string>
+    <string name="loc_3">ზამბია</string>
+    <string name="loc_4">ავსტრალია</string>
+    <string name="loc_5">ავსტრალია</string>
+    <string name="desc_1">ტბა აშშ -სა და კანადაში, ჩრდილოეთ ამერიკის ერთ -ერთი დიდი ტბები. იგი მდებარეობს მიჩიგანის ტბის აღმოსავლეთით, რომელიც მას უკავშირდება მაკინაკის სრუტე. წყლის მოცულობაა 3540 კმ 3. ჰიდროგრაფიის თვალსაზრისით, მიჩიგანი და ჰურონი ქმნიან ერთ სისტემას, მაგრამ გეოგრაფიულად ისინი ცალკეულ ტბებს განიხილავენ.</string>
+    <string name="desc_2">ტბა კანადაში და აშშ - ში, მეოთხე დიდი ტბების სისტემაში. 25700 კმ 2 -ის ფართობით, ერი მე -11 ადგილზეა მსოფლიოს ტბებს შორის და ამ პარამეტრში აშშ -ში მე -4.</string>
+    <string name="desc_3">ტბა ჩრდილოეთ ამერიკაში. იგი მდებარეობს დიდი ტბების დასავლეთით, კანადასა და აშშ -ს საზღვარზე. იგი მე -7 ადგილს იკავებს აშშ -ს ტბებს შორის.</string>
+    <string name="desc_4">დაახლოებით 680 მილიონი წლის წინ გეოლოგიური პროცესების მიერ წარმოქმნილი ნარინჯისფერი-ყავისფერი ფორმის კლდის ფორმირება. იგი მდებარეობს ცენტრალურ ავსტრალიაში - ჩრდილოეთ ტერიტორიის სამხრეთით მდებარე ადმინისტრაციული რეგიონი, კონტინენტის გეოგრაფიული ცენტრის მახლობლად.</string>
+    <string name="finish">დასრულება</string>
+    <string name="explore_nyour_njourney_nwith_us">გამოიკვლიეთ \ nyour \ njourney \ nwith აშშ</string>
+    <string name="in_the_appendix_you_can_get_acquainted_with_the_sights_of_different_continents_add_them_to_favorites_and_see_detailed_information">დანართში შეგიძლიათ გაეცნოთ სხვადასხვა კონტინენტების ღირსშესანიშნაობებს, დაამატეთ ისინი ფავორიტებს და იხილეთ დეტალური ინფორმაცია</string>
+</resources>

@@ -29,7 +29,7 @@ class ContinentAdapter(private val continentList : List<ContinentModel>,
         val continent : ContinentModel = continentList[position]
 
         holder.icon.setImageResource(R.drawable.icon_place)
-        holder.nameContinent.text = continent.nameContinent
+        holder.nameContinent.setText(continent.nameContinent)
 
         if (selectedItem == continent.id) {
             holder.itemView.setBackgroundResource(R.drawable.bg_item_place_active)

@@ -21,4 +21,7 @@ interface AttractionDao {
 
     @Delete
     fun delete(sightseeing: AttractionModel)
+
+    @Query("SELECT * FROM attraction_table WHERE isFavorite = 1")
+    fun getFavoriteAttractions(): LiveData<List<AttractionModel>>
 }

@@ -20,6 +20,7 @@ application: Application) : AndroidViewModel(application) {
     }
 
     var allSightseeing: LiveData<List<AttractionModel>> = repository.allSightseeing
+    val favoriteAttractions: LiveData<List<AttractionModel>> = repository.favoriteAttractions
 
     fun getDataList(): LiveData<List<AttractionModel>> {
         return dataList
@@ -39,13 +40,5 @@ application: Application) : AndroidViewModel(application) {
 
     fun delete(sightseeing: AttractionModel) = viewModelScope.launch {
         repository.delete(sightseeing)
-    }
-
-    /*fun getAll() = viewModelScope.launch {
-        repository.getAll()
-    }*/
-
-    fun getAll() : LiveData<List<AttractionModel>>{
-        return repository.allSightseeing
     }
 }

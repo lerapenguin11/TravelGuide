@@ -43,8 +43,7 @@ class MainActivity : AppCompatActivity() {
             replaceFragment(RegistrationFragment())
         }
     }
-
-
+    
 
     fun hideBottomNavigationView() {
         binding.bottomNavigationView.visibility = View.GONE

@@ -8,6 +8,7 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.travelguide.R
 import com.example.travelguide.business.model.bd.AttractionModel
 import com.example.travelguide.presentation.adapter.listener.FavoriteListener
@@ -26,33 +27,25 @@ class AttractionAdapter(private val attractionModelList : List<AttractionModel>,
     override fun onBindViewHolder(holder: AttractionViewHolder, position: Int) {
         val attraction : AttractionModel = attractionModelList[position]
 
-        holder.nameAttraction.text = attraction.nameAttraction
-        holder.locationAttach.text = attraction.locationAttach
+        holder.nameAttraction.setText(attraction.nameAttraction)
+        holder.locationAttach.setText(attraction.locationAttach)
         holder.rating.text = attraction.rating.toString()
+        Glide.with(holder.itemView).load(attraction.icon).into(holder.icon)
 
         holder.ratingBar.rating = attraction.rating
         holder.ratingBar.numStars = 5
 
         if (attraction.isFavorite){
-            //listener.favoriteList(attraction)
             holder.ic_fav.setImageResource(R.drawable.ic_fav)
-        } /*else{
-            //listener.favoriteList(attraction)
-            holder.ic_fav.setImageResource(R.drawable.ic_favorite)
-        }*/
+        }
+
         holder.bt_fav.setOnClickListener {
             listener.favoriteList(attraction)
             holder.ic_fav.setImageResource(R.drawable.ic_fav)
+        }
 
-            /*if (attraction.isFavorite){
-                listener.favoriteList(attraction)
-                holder.ic_fav.setImageResource(R.drawable.ic_fav)
-            } else{
-                //listener.favoriteList(attraction)
-                holder.ic_fav.setImageResource(R.drawable.ic_favorite)
-            }*/
-            //listener.favoriteList(attraction)
-
+        holder.itemView.setOnClickListener {
+            listener.detailsList(attraction)
         }
     }
 
@@ -63,5 +56,6 @@ class AttractionAdapter(private val attractionModelList : List<AttractionModel>,
         val ratingBar : RatingBar = view.findViewById(R.id.ratingBar)
         val bt_fav : ConstraintLayout = view.findViewById(R.id.bt_add_fav)
         val ic_fav : ImageView = view.findViewById(R.id.ic_fav)
+        val icon : ImageView = view.findViewById(R.id.icon_place)
     }
 }

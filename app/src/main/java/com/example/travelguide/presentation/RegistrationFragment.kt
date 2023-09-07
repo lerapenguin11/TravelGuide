@@ -1,5 +1,6 @@
 package com.example.travelguide.presentation
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -34,7 +35,9 @@ class RegistrationFragment : Fragment() {
                 Toast.makeText(context, getText(R.string.reg_toast), Toast.LENGTH_SHORT).show()
             } else{
                 viewModel.registerUser(name, surName, 1)
-                replaceFragment(HomeFragment())
+                //replaceFragment(HomeFragment())
+                val intent = Intent(requireContext(), MainActivity::class.java)
+                startActivity(intent)
             }
         }
 

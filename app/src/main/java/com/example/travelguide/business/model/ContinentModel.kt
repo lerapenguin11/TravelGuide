@@ -4,6 +4,6 @@ import com.example.travelguide.business.model.bd.AttractionModel
 
 data class ContinentModel(
     val id : Int,
-    val nameContinent : String,
+    val nameContinent : Int,
     val attractionModels: List<AttractionModel>
 )

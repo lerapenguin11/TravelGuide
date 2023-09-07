@@ -7,9 +7,12 @@ import androidx.room.PrimaryKey
 data class AttractionModel(
     @PrimaryKey(autoGenerate = false)
     val id: Int,
-    val nameAttraction : String,
-    val locationAttach : String,
+    val nameAttraction : Int,
+    val locationAttach : Int,
     val rating : Float,
     val nameContinent : String,
+    val description : Int,
+    val tag : Int,
+    val icon : String,
     var isFavorite: Boolean = false
 )
