@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Gezi Rehberi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="welcome">Hoş geldin!</string>
+    <string name="first_name">İlk adı</string>
+    <string name="last_name">Soy isim</string>
+    <string name="forward">İleri</string>
+    <string name="reg_toast">Tüm alanları doldurun!</string>
+    <string name="home">Ev</string>
+    <string name="favorite">Favori</string>
+    <string name="profile">Profil</string>
+    <string name="find_your_nfavorite_place">\Nfavorite yerinizi bulun</string>
+    <string name="faforites">Faforitler</string>
+    <string name="_profile">Profil</string>
+    <string name="details">Detaylar</string>
+    <string name="about_trip">Gezi Hakkında</string>
+    <string name="cont_1">Avrasya</string>
+    <string name="cont_2">Afrika</string>
+    <string name="cont_3">Avustralya</string>
+    <string name="cont_4">Antarktika</string>
+    <string name="cont_5">Kuzey Amerika</string>
+    <string name="cont_6">Güney Amerika</string>
+    <string name="att_1">Baykal Gölü</string>
+    <string name="att_2">Çin seddi</string>
+    <string name="att_3">Victoria Şelalesi</string>
+    <string name="att_4">Uluru</string>
+    <string name="att_5">Büyük Bariyer Resif</string>
+    <string name="att_6">Huron</string>
+    <string name="att_7">kayalık Dağlar</string>
+    <string name="loc_1">Rusya</string>
+    <string name="loc_2">Çin</string>
+    <string name="loc_3">Zambiya</string>
+    <string name="loc_4">Avustralya</string>
+    <string name="loc_5">Avustralya</string>
+    <string name="desc_1">Kuzey Amerika Büyük Göllerinden biri olan ABD ve Kanada\'da göl. Mackinac Boğazı tarafından kendisine bağlı Michigan Gölü\'nün doğusunda yer almaktadır. Su hacmi 3540 km3\'tür. Hidrografi açısından, Michigan ve Huron tek bir sistem oluştururlar, ancak coğrafi olarak ayrı göller olarak kabul edilirler.</string>
+    <string name="desc_2">Kanada ve ABD\'de göl, Dördüncü Great Lakes sisteminde. 25700 km2\'lik bir alanla Erie, dünyanın gölleri arasında 11. ve bu parametrede ABD\'de 4. sırada yer alıyor.</string>
+    <string name="desc_3">Kuzey Amerika\'da bir göl. Kanada ve ABD sınırındaki Büyük Göllerin batısında yer almaktadır. ABD\'nin gölleri arasında 7. sırada yer alıyor.</string>
+    <string name="desc_4">Yaklaşık 680 milyon yıl önce jeolojik süreçlerle oluşan devasa turuncu-kahverengi oval şekilli kaya oluşumu. Orta Avustralya\'\da - kıtanın coğrafi merkezine yakın bir noktada Kuzey Bölgesi\'nin en güney idari bölgesidir.</string>
+    <string name="finish">Sona ermek</string>
+    <string name="explore_nyour_njourney_nwith_us">\ Nyour \ njourney\'i keşfedin</string>
+    <string name="in_the_appendix_you_can_get_acquainted_with_the_sights_of_different_continents_add_them_to_favorites_and_see_detailed_information">Ekte, farklı kıtaların manzaralarıyla tanışabilir, favorilere ekleyebilir ve ayrıntılı bilgileri görebilirsiniz</string>
+</resources>

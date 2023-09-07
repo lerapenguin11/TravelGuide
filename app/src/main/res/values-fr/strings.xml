@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Guide de voyage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="welcome">Accueillir!</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="forward">Avant</string>
+    <string name="reg_toast">Remplissez tous les champs!</string>
+    <string name="home">Maison</string>
+    <string name="favorite">Préféré</string>
+    <string name="profile">Profil</string>
+    <string name="find_your_nfavorite_place">Trouvez votre endroit \ nfavorite</string>
+    <string name="faforites">Fafites</string>
+    <string name="_profile">Profil</string>
+    <string name="details">Détails</string>
+    <string name="about_trip">À propos du voyage</string>
+    <string name="cont_1">Eurasie</string>
+    <string name="cont_2">Afrique</string>
+    <string name="cont_3">Australie</string>
+    <string name="cont_4">Antarctique</string>
+    <string name="cont_5">Amérique du Nord</string>
+    <string name="cont_6">Amérique du Sud</string>
+    <string name="att_1">lac Baikal</string>
+    <string name="att_2">La grande muraille de Chine</string>
+    <string name="att_3">Les chutes Victoria</string>
+    <string name="att_4">Uluru</string>
+    <string name="att_5">Grande barrière récif</string>
+    <string name="att_6">Huron</string>
+    <string name="att_7">montagnes Rocheuses</string>
+    <string name="loc_1">Russie</string>
+    <string name="loc_2">Chine</string>
+    <string name="loc_3">Zambie</string>
+    <string name="loc_4">Australie</string>
+    <string name="loc_5">Australie</string>
+    <string name="desc_1">Lake aux États-Unis et au Canada, l\'un des Grands Lacs nord-américains. Il est situé à l\'est du lac Michigan, lié à celui-ci par le détroit de Mackinac. Le volume d\'eau est de 3540 km3. Du point de vue de l\'hydrographie, le Michigan et Huron forment un seul système, mais géographiquement, ils sont considérés comme des lacs séparés.</string>
+    <string name="desc_2">Lac au Canada et aux États-Unis, le quatrième du système des Grands Lacs. Avec une superficie de 25700 km2, Erie se classe 11e parmi les lacs du monde et 4e aux États-Unis dans ce paramètre.</string>
+    <string name="desc_3">Un lac en Amérique du Nord. Il est situé à l\'ouest des Grands Lacs à la frontière du Canada et des États-Unis. Il occupe la 7e place par région parmi les lacs des États-Unis.</string>
+    <string name="desc_4">Une formation rocheuse ovale à brun orange massive formée par des processus géologiques il y a environ 680 millions d\'années. Il est situé dans le centre de l\'Australie - la région administrative la plus au sud du Territoire du Nord, à un point près du centre géographique du continent.</string>
+    <string name="finish">Finition</string>
+    <string name="explore_nyour_njourney_nwith_us">Explorer \ nyour \ njourney \ nwith us</string>
+    <string name="in_the_appendix_you_can_get_acquainted_with_the_sights_of_different_continents_add_them_to_favorites_and_see_detailed_information">Dans l\'annexe, vous pouvez vous familiariser avec les vues de différents continents, les ajouter aux favoris et voir des informations détaillées</string>
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Guia de viagem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+    <string name="welcome">Bem-vindo!</string>
+    <string name="first_name">Primeiro nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="forward">Avançar</string>
+    <string name="reg_toast">Preencha todos os campos!</string>
+    <string name="home">Lar</string>
+    <string name="favorite">Favorito</string>
+    <string name="profile">Perfil</string>
+    <string name="find_your_nfavorite_place">Encontre seu\nde lugar favorito</string>
+    <string name="faforites">Faforitas</string>
+    <string name="_profile">Perfil</string>
+    <string name="details">Detalhes</string>
+    <string name="about_trip">Sobre a viagem</string>
+    <string name="cont_1">Eurásia</string>
+    <string name="cont_2">África</string>
+    <string name="cont_3">Austrália</string>
+    <string name="cont_4">Antártica</string>
+    <string name="cont_5">América do Norte</string>
+    <string name="cont_6">América do Sul</string>
+    <string name="att_1">Lago Baikal</string>
+    <string name="att_2">A grande Muralha da China</string>
+    <string name="att_3">Cataratas Vitória</string>
+    <string name="att_4">Uluru</string>
+    <string name="att_5">Grande Barreira de Coral</string>
+    <string name="att_6">Hurão</string>
+    <string name="att_7">montanhas Rochosas</string>
+    <string name="loc_1">Rússia</string>
+    <string name="loc_2">China</string>
+    <string name="loc_3">Zâmbia</string>
+    <string name="loc_4">Austrália</string>
+    <string name="loc_5">Austrália</string>
+    <string name="desc_1">Lago nos EUA e Canadá, um dos Grandes Lagos da América do Norte. Ele está localizado a leste do Lago Michigan, conectado a ele pelo Estreito de Mackinac. O volume de água é de 3.540 km3. Do ponto de vista da hidrografia, Michigan e Huron formam um sistema único, mas geograficamente são considerados lagos separados.</string>
+    <string name="desc_2">Lago no Canadá e nos EUA, o quarto no sistema dos Grandes Lagos. Com uma área de 25.700 km2, Erie ocupa o 11º lugar entre os lagos do mundo e o 4º nos EUA neste parâmetro.</string>
+    <string name="desc_3">Um lago na América do Norte. Está localizado a oeste dos Grandes Lagos, na fronteira do Canadá e dos EUA. Ocupa o 7º lugar em área entre os lagos dos EUA.</string>
+    <string name="desc_4">Uma enorme formação rochosa laranja-marrom de formato oval formada por processos geológicos há cerca de 680 milhões de anos. Está localizado na Austrália Central - região administrativa mais meridional do Território do Norte, em um ponto próximo ao centro geográfico do continente.</string>
+    <string name="finish">Terminar</string>
+    <string name="explore_nyour_njourney_nwith_us">Explore\nsua\njornada\nconosco</string>
+    <string name="in_the_appendix_you_can_get_acquainted_with_the_sights_of_different_continents_add_them_to_favorites_and_see_detailed_information">No apêndice você poderá conhecer os pontos turísticos de diferentes continentes, adicioná-los aos favoritos e ver informações detalhadas</string>
+
+</resources>
